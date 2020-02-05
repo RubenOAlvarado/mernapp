@@ -1,0 +1,19 @@
+//Bootstrap for react
+npm install react-bootstrap bootstrap
+
+//React router dom
+npm install react-router-dom --save
+
+//Node libraries for rest service
+//mongoose is the orm to use with mongo and Node, based in JSON
+//express is a node framework to do more robust
+//cors let you do http request locally
+//body-parser extracts the entire body portion of an incoming request stream and exposes it on re.body 
+npm install mongoose express cors body-parser
+
+//nodemon automate the server restarting process
+npm install nodemon --save-dev
+
+//axios for https request on client side
+npm install axios
+
