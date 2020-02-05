@@ -10,7 +10,10 @@ exports.createStudent = (req,res,next) => {
 
 exports.readStudents = (req,res, next) => {
     Student.find((err,data) => {
-        if(err) return next(err);
+        if(err){ 
+            console.log(err);
+            return next(err);
+        }
         res.json(data);
     });
 }

@@ -3,7 +3,7 @@ const express = require('express'),
     cors = require('cors'),
     logger = require('morgan'),
     createError = require('http-errors'),
-    PORT = process.env.PORT || 3000,
+    PORT = process.env.PORT || 4000,
     bodyParser = require('body-parser');
 
 
@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 
 //this is our mongo database
-const dbRoute = 'mongodb+srv://Munditoro:munditoro@crudtest-h3y3e.mongodb.net/students?retryWrites=true&w=majority';
+const dbRoute = 'mongodb+srv://Munditoro:munditoro@crudtest-h3y3e.mongodb.net/test?retryWrites=true&w=majority';
 
 //connects our backend code with the database
 mongoose.connect(dbRoute, { useNewUrlParser: true });
@@ -26,7 +26,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
 const routes = require('./api/routes/routes');
-app.use('/', routes);
+app.use('/students', routes);
 
 
 app.use(logger('dev'));

@@ -1,0 +1,24 @@
+{
+  "name": "mernapp",
+  "version": "1.0.0",
+  "description": "mern app example Developing a MERN app to integrate React with node backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"concurrently \"cd backend && npm start\" \"cd react-mernstack-crud && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenOAlvarado/mernapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenOAlvarado/mernapp/issues"
+  },
+  "homepage": "https://github.com/RubenOAlvarado/mernapp#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
